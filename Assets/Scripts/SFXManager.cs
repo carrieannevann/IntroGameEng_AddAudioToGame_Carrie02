@@ -31,12 +31,14 @@ public class SFXManager : MonoBehaviour
     //called in the PlayerController Script
     public void PlayerShoot()
     {
+        SFXaudioSource.pitch = Random.Range(0.7f, 1.5f);
         SFXaudioSource.PlayOneShot(playerShoot);
     }
 
     //called in the PlayerController Script
     public void PlayerDamage()
     {
+        SFXaudioSource.pitch = 1f;
         SFXaudioSource.PlayOneShot(playerDamage);
     }
 
